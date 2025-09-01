@@ -48,20 +48,23 @@ https://www.arduino.cc/en/software/#ide
 2.添加Wio Terminal开发板支持：
 
 打开您的 Arduino IDE，点击 File > Preferences  
-将以下网址复制到Additional Boards Manager URLs:  
+并将以下网址复制到Additional Boards Manager URLs:  
 添加: https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
+![图片alt](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Boardurl.png)
 
-3.从开发板管理器安装"Seeed Studio SAMD Boards"
+从开发板管理器安装"Seeed Studio SAMD Boards"
 点击 Tools > Board > Board Manager 并在开发板管理器中搜索 Wio Terminal。
+![图片alt](https://files.seeedstudio.com/wiki/Wio-Terminal/img/addBoard.png)
 
-4.选择您的开发板和端口  
+选择您的开发板和端口  
 您需要在 Tools > Board 菜单中选择与您的 Arduino 对应的条目。 选择 Wio Terminal。  
 
 在Arduino IDE中打开 Wio_Tennis_for_Two.ino
 
 选择开发板: "Seeed Studio Wio Terminal"
+![图片alt](https://files.seeedstudio.com/wiki/Wio-Terminal/img/selectBoard.png)
 
-将代码上传到您的Wio Terminal  
+将代码上传到您的Wio Terminal
 
 ## **游戏说明**
 
@@ -121,9 +124,9 @@ drawGame(): 将所有游戏元素渲染到显示屏
 
 checkInput(): 处理玩家按键操作
 
-**开发阶段**
+## **开发阶段**
 
-阶段一: 最小可行产品
+**阶段一: 最小可行产品**
 
 在屏幕上渲染静态的球和球拍
 
@@ -135,7 +138,7 @@ checkInput(): 处理玩家按键操作
 
 创建基础计分系统
 
-阶段二: 功能完善
+**阶段二: 功能完善**
 
 开发AI对手逻辑
 
@@ -143,7 +146,7 @@ checkInput(): 处理玩家按键操作
 
 实现游戏状态（开始、游戏中、游戏结束、胜利）
 
-阶段三: 优化改进
+**阶段三: 优化改进**
 
 代码精炼和注释
 
@@ -179,7 +182,7 @@ checkInput(): 处理玩家按键操作
 
 带有分数和关卡指示器的简洁UI
 
-**未来增强**
+## **未来增强**
 
 未来版本的潜在改进：
 
@@ -193,15 +196,15 @@ checkInput(): 处理玩家按键操作
 
 可调节难度设置
 
-**关于原版游戏**
+## **关于原版游戏**
 
 《Tennis for Two》由物理学家William Higinbotham于1958年在布鲁克海文国家实验室创建。它旨在在年度开放日期间娱乐访客，被认为是史上最早的电玩之一，甚至早于《Spacewar!》和Magnavox Odyssey。  
 
-**许可证**
+## **许可证**
 
 本项目是开源项目，采用MIT许可证。  
 
-**致谢**
+## **致谢**
 
 Seeed Studio提供Wio Terminal硬件
 
@@ -209,11 +212,11 @@ William Higinbotham创建了原版游戏
 
 Arduino社区提供广泛的库和支持
 
-**贡献**
+## **贡献**
 
 欢迎提交贡献、问题和功能请求。如果您想参与贡献，请查看问题页面。  
 
-**开发者**
+## **开发者**
 
 邓宇淇（Yuki）
 
