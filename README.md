@@ -1,13 +1,10 @@
-# Wio-Tennis-for-Two
-本项目旨在使用 Wio Terminal 开发板，复刻1958年由 William Higinbotham 创造的史上第一款电子游戏《Tennis for Two》。我们将在保留经典核心玩法的基础上，充分利用 Wio Terminal 的硬件资源实现游戏功能。
-
 项目概述
 本项目是基于 Seeed Studio Wio Terminal 开发板对史上第一款电子游戏《Tennis for Two》的现代复刻版。原版游戏由 William Higinbotham 于1958年创造，本版本在保留经典核心玩法的基础上，引入了现代游戏元素，如关卡系统和智能AI对手。
 
 游戏采用物理基础的球体运动机制，支持球拍碰撞检测，并具有随关卡提升的自适应AI难度系统。通过简洁的用户界面显示分数和游戏状态信息，这款实现将游戏历史的一件珍品带到了现代硬件平台上。
 
 功能特点
-经典玩法: 在原版 Tennis for Two 的游戏机制上实现创新性玩法
+经典玩法: 在原版 Tennis for Two 的游戏机制基础上实现创新性玩法
 
 渐进难度: 5个关卡，球速和AI反应速度逐级提升
 
@@ -25,8 +22,6 @@ A键: 向右移动
 
 C键: 向左移动
 
-B键: 游戏重置/重新开始
-
 软件要求
 Arduino IDE 2.3.6 或更高版本
 
@@ -43,21 +38,29 @@ Seeed_Arduino_Button (用于按键输入处理)
 
 添加Wio Terminal开发板支持：
 
-打开首选项 → 附加开发板管理器网址
+打开您的 Arduino IDE，点击 File > Preferences
+
+并将以下网址复制到Additional Boards Manager URLs:
 
 添加: https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
 
+https://media/image1.png
+
 从开发板管理器安装"Seeed Studio SAMD Boards"
 
-通过库管理器安装所需库
+点击 Tools > Board > Board Manager 并在开发板管理器中搜索 Wio Terminal
 
-克隆或下载此项目
+https://media/image2.png
+
+选择您的开发板和端口
+
+您需要在 Tools > Board 菜单中选择与您的 Arduino 对应的条目。选择 Wio Terminal
+
+https://media/image3.png
 
 在Arduino IDE中打开 Wio_Tennis_for_Two.ino
 
 选择开发板: "Seeed Studio Wio Terminal"
-
-选择适当的端口
 
 将代码上传到您的Wio Terminal
 
@@ -72,18 +75,16 @@ A键: 向右移动球拍
 
 C键: 向左移动球拍
 
-B键: 重新开始游戏（游戏结束时）
-
 游戏玩法
 防止球到达底部边界
 
-用球拍击球将其打回AI对手
+用球拍击球将其打回
 
 当球通过AI的上边界时得分
 
 获得7分后进入下一关卡
 
-如果AI对您获得7分，游戏结束
+如果AI获得7分，游戏结束
 
 完成所有5个关卡以赢得游戏
 
@@ -97,7 +98,6 @@ Wio_Tennis_for_Two/
 ├── graphics.cpp            # 界面渲染实现
 ├── input.h                 # 按键输入处理声明
 └── input.cpp               # 输入处理实现
-
 关键函数
 checkCollision(): 检测球与边界和球拍的碰撞
 
@@ -187,6 +187,6 @@ Arduino社区提供广泛的库和支持
 欢迎提交贡献、问题和功能请求。如果您想参与贡献，请查看问题页面。
 
 开发者
-作为经典游戏在现代嵌入式硬件上实现的示范项目开发。
+邓宇淇（Yuki）
 
 本项目用于教育和娱乐目的。Tennis for Two是电子游戏历史上的历史文物。
