@@ -48,14 +48,13 @@ https://www.arduino.cc/en/software/#ide
 2.添加Wio Terminal开发板支持：
 
 打开您的 Arduino IDE，点击 File > Preferences  
-并将以下网址复制到Additional Boards Manager URLs:  
+将以下网址复制到Additional Boards Manager URLs:  
 添加: https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
 
-从开发板管理器安装"Seeed Studio SAMD Boards"
-
+3.从开发板管理器安装"Seeed Studio SAMD Boards"
 点击 Tools > Board > Board Manager 并在开发板管理器中搜索 Wio Terminal。
 
-选择您的开发板和端口  
+4.选择您的开发板和端口  
 您需要在 Tools > Board 菜单中选择与您的 Arduino 对应的条目。 选择 Wio Terminal。  
 
 在Arduino IDE中打开 Wio_Tennis_for_Two.ino
